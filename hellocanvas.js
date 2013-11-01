@@ -24,7 +24,7 @@ function update() {
 function redraw() {
     ctx.clearRect(0, 0, width, height);
     if (distanceSquared(circleX, circleY, mouseX, mouseY) < circleR*circleR)
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = 'green';
     else
         ctx.fillStyle = 'black';
     fillCircle(circleX, circleY, circleR);
